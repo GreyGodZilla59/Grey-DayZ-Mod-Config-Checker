@@ -1,28 +1,23 @@
 # Changelog
 
+## v1.18.2 — 2026-06-28
+
+- **Grey GodZilla** branding standardized across app title, window, and publisher metadata
+- App renamed to `Grey GodZilla DayZ Mod Config Checker`
+- Version badge in header matches DayZ Validator UI style
+
+## v1.18.1 — 2026-06-28
+
+- **AV hardening:** removed bundled MinGW DLLs (static-linked engine)
+- Excluded unused numpy/psutil/etc. from PyInstaller bundle (smaller exe)
+- Windows **version resource** + **asInvoker** manifest (no admin request)
+- C++ engine installs to `%LOCALAPPDATA%\GreyGodZilla\DayZValidator\` (not temp `_MEIPASS`)
+- Removed `CREATE_NO_WINDOW` subprocess flag (common malware heuristic)
+
 ## v1.18.0 — 2026-06-28
 
-- **Config.cpp panel** on Config Checker — File / @Mod / Deep scan scope
-- **Mod** folder browse · asset path audit toggle
-- **Fix all .cpp** batch auto-fix with `.bak` backups
-- **Diff** button on scan toolbar
+- Config.cpp panel — File / @Mod / Deep scope, Fix all .cpp, Diff button
 
-## v1.17.0 — 2026-06-28
+## v1.17.0
 
-- RPT log import · server profiles · config diff
-- Vanilla sync · globals presets · restart advice
-- CE registry audit · asset path audit
-
-## v1.16.0
-
-- Project file (`.greydayz.json`) · CE audit · cross-search
-- Mission diff · deploy · server cfg checks · suppressions
-
-## v1.15.0
-
-- Finding jump to editor · unsaved dots · per-file validate
-- Vanilla compare · types CSV · folder watch · Ctrl+P · fix diff preview
-
-## v1.14.0
-
-- Mission Editor file load fix · boxed sidebar · theme restore
+- RPT import, server profiles, vanilla sync, globals presets, CE registry audit
